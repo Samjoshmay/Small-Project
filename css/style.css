@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,700&display=swap");
+
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: #b6895b;
+  border: none;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../img/coffee-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  /* background-color: rgba(1, 1, 1, 0.3); */
+}
+
+.navbar .navbar-logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  margin: 0 1.3rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a::after {
+  content: " ";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2 linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleY(0.5);
+  width: 50%;
+  margin: auto;
+}
+
+.hero .content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #fff;
+}
+
+.hero .content:after {
+  content: " ";
+}
