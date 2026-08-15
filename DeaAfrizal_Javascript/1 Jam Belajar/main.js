@@ -127,7 +127,7 @@
 // body.append(namaSaya);
 // body.append(h1);
 // -------------------------------------------------------------------------------------------------------
-
+// Tugas 1
 document.title = "Fikri Gobles";
 const body = document.body;
 const btn1 = document.getElementById("btn1");
@@ -154,4 +154,31 @@ function ubahText() {
 
 function oriText() {
   btn1.textContent = defaultText;
+}
+//-------------------------------------------------------------------------------
+// function hasilkanText() {
+//   const newText2 = document.createElement("p");
+//   newText2.textContent = "Halo Bung Apa Kabar!";
+//   body.append(newText2);
+// }
+
+// function ubahWarna() {
+//   body.style.color = "red";
+//   body.style.background = "black";
+// }
+////----------------------------------------------------------------------------------
+// Tugas 2
+const defaultText2 = "Klik Saya 2";
+btn2.textContent = defaultText2;
+
+const newText = document.createElement("p");
+body.append(newText);
+
+function hasilkanText() {
+  newText.style.color = "black";
+  newText.textContent = "Halo Bung Apa Kabar!";
+}
+
+function ubahWarna() {
+  newText.style.color = "aqua";
 }
